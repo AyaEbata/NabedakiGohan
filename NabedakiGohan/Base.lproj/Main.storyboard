@@ -15,22 +15,39 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xfv-js-voa">
-                                <frame key="frameInset" minX="159" minY="218" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21B-Mj-MX9">
+                                <state key="normal" title="ごはんをたく"/>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ナベダキゴハン" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z6p-uL-s8o">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="433" id="YaD-tf-uBl"/>
+                                    <constraint firstAttribute="height" constant="60" id="tSY-Dv-KSL"/>
+                                </constraints>
                                 <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay-Regular" family=".SF NS Display" pointSize="29"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erR-GX-UJN">
+                                <state key="normal" title="きょうのかんそう"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Z6p-uL-s8o" firstAttribute="centerX" secondItem="21B-Mj-MX9" secondAttribute="centerX" id="CMo-1w-2WI"/>
+                            <constraint firstItem="21B-Mj-MX9" firstAttribute="top" secondItem="Z6p-uL-s8o" secondAttribute="bottom" constant="63" id="TTa-Ar-efB"/>
+                            <constraint firstItem="erR-GX-UJN" firstAttribute="centerX" secondItem="21B-Mj-MX9" secondAttribute="centerX" id="hbh-gC-2Ej"/>
+                            <constraint firstItem="erR-GX-UJN" firstAttribute="top" secondItem="21B-Mj-MX9" secondAttribute="bottom" constant="27" id="jO8-xh-8wp"/>
+                            <constraint firstItem="21B-Mj-MX9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ttR-Ry-dTN"/>
+                            <constraint firstItem="21B-Mj-MX9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uAE-qF-bhd"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.6953125" y="138.79941434846265"/>
         </scene>
     </scenes>
 </document>
