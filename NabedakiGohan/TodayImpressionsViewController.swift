@@ -1,5 +1,5 @@
 //
-//  TodayImpressionsController.swift
+//  TodayImpressionsViewController.swift
 //  NabedakiGohan
 //
 //  Created by えばた あや on 2016/10/14.

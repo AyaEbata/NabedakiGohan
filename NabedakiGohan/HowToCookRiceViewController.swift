@@ -1,5 +1,5 @@
 //
-//  HowToCookRiceController.swift
+//  HowToCookRiceViewController.swift
 //  NabedakiGohan
 //
 //  Created by えばた あや on 2016/10/14.
