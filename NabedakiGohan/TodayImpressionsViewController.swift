@@ -6,4 +6,13 @@
 //  Copyright © 2016年 えばた あや. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class TodayImpressionsViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+    
+}

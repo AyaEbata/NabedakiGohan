@@ -57,15 +57,15 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="138.58695652173915"/>
         </scene>
-        <!--View Controller-->
+        <!--How To Cook Rice View Controller-->
         <scene sceneID="Zxv-OK-hXS">
             <objects>
-                <viewController id="5Lp-qg-IIW" sceneMemberID="viewController">
+                <viewController id="5Lp-qg-IIW" customClass="HowToCookRiceViewController" customModule="NabedakiGohan" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gR0-98-yJ2"/>
                         <viewControllerLayoutGuide type="bottom" id="fAT-wM-vyU"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="DJa-fo-H5f" customClass="HowToCookRiceController">
+                    <view key="view" contentMode="scaleToFill" id="DJa-fo-H5f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -251,15 +251,15 @@
             </objects>
             <point key="canvasLocation" x="1058.4000000000001" y="135.38230884557723"/>
         </scene>
-        <!--View Controller-->
+        <!--Today Impressions View Controller-->
         <scene sceneID="IMY-hA-wA7">
             <objects>
-                <viewController id="aF2-qC-Wzh" sceneMemberID="viewController">
+                <viewController id="aF2-qC-Wzh" customClass="TodayImpressionsViewController" customModule="NabedakiGohan" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oZP-No-fap"/>
                         <viewControllerLayoutGuide type="bottom" id="h1d-c6-laK"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="TLx-Gc-oxw" customClass="TodayImpressionsController">
+                    <view key="view" contentMode="scaleToFill" id="TLx-Gc-oxw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
