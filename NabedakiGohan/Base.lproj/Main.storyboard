@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,7 +18,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21B-Mj-MX9">
@@ -64,10 +66,10 @@
                         <viewControllerLayoutGuide type="bottom" id="fAT-wM-vyU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="DJa-fo-H5f">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ごはんのたきかた" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNl-c4-AOK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ごはんのたきかた" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNl-c4-AOK">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="198" id="a49-aI-xWY"/>
                                 </constraints>
@@ -220,7 +222,7 @@
                             <constraint firstItem="PlN-x2-t0h" firstAttribute="top" secondItem="X0x-cA-8uO" secondAttribute="bottom" constant="17.5" id="esw-DL-84t"/>
                             <constraint firstItem="6HG-tZ-PaF" firstAttribute="top" secondItem="OLo-Kp-eU9" secondAttribute="bottom" constant="17.5" id="gyr-66-swz"/>
                             <constraint firstItem="GNe-Sp-4Y0" firstAttribute="leading" secondItem="6HG-tZ-PaF" secondAttribute="leading" id="hog-nS-YCV"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="yMS-A3-Ijc" secondAttribute="trailing" constant="12" id="lcH-Yh-sin"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yMS-A3-Ijc" secondAttribute="trailing" constant="18" id="lcH-Yh-sin"/>
                             <constraint firstItem="6HG-tZ-PaF" firstAttribute="leading" secondItem="OLo-Kp-eU9" secondAttribute="leading" id="ukU-fe-NLv"/>
                             <constraint firstItem="kud-yW-qgd" firstAttribute="baseline" secondItem="X0x-cA-8uO" secondAttribute="baseline" id="wzE-8d-Wc0"/>
                             <constraint firstItem="MOw-nd-1Ah" firstAttribute="leading" secondItem="OAh-JI-e05" secondAttribute="leading" id="zFh-Xc-1SF"/>
@@ -240,14 +242,116 @@
                         <viewControllerLayoutGuide type="bottom" id="h1d-c6-laK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TLx-Gc-oxw">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="かんそう" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4W-de-ETe">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="GJA-Yz-KHd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="柔らかさ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7z-sC-Aja">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="O3A-u2-8p1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="芯" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRd-s3-lKn">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="29" id="1ul-Y3-pxf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="おこげ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndU-Le-ird">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="63" id="IOe-ki-S88"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="水っぽさ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jI-et-dkE">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="U6T-M8-bbJ">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="169" id="HPd-gT-e8H"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="やわい"/>
+                                    <segment title="良さげ"/>
+                                    <segment title="かたい"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5Sy-nC-5CX">
+                                <segments>
+                                    <segment title="少ない"/>
+                                    <segment title="良さげ"/>
+                                    <segment title="おおい"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1VB-Kn-0Tt">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="Qav-C0-Kts"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="少ない"/>
+                                    <segment title="良さげ"/>
+                                    <segment title="おおい"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ye2-lV-uBF">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="Bes-gO-s4y"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="ある"/>
+                                    <segment title="ない"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5Sy-nC-5CX" firstAttribute="centerY" secondItem="9jI-et-dkE" secondAttribute="centerY" id="1Td-Ja-O1Y"/>
+                            <constraint firstItem="Z4W-de-ETe" firstAttribute="leading" secondItem="TLx-Gc-oxw" secondAttribute="leadingMargin" constant="25" id="3e2-xy-Xak"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="U6T-M8-bbJ" secondAttribute="trailing" constant="18" id="45m-94-3aj"/>
+                            <constraint firstItem="Ye2-lV-uBF" firstAttribute="leading" secondItem="5Sy-nC-5CX" secondAttribute="leading" id="Cjd-TG-7lJ"/>
+                            <constraint firstItem="Ye2-lV-uBF" firstAttribute="leading" secondItem="1VB-Kn-0Tt" secondAttribute="leading" id="F7H-V6-cee"/>
+                            <constraint firstItem="Ye2-lV-uBF" firstAttribute="trailing" secondItem="1VB-Kn-0Tt" secondAttribute="trailing" id="FDG-CY-wez"/>
+                            <constraint firstItem="9jI-et-dkE" firstAttribute="leading" secondItem="O7z-sC-Aja" secondAttribute="leading" id="FvO-bY-Bvo"/>
+                            <constraint firstItem="1VB-Kn-0Tt" firstAttribute="firstBaseline" secondItem="ndU-Le-ird" secondAttribute="baseline" id="GSB-G9-GIc"/>
+                            <constraint firstItem="Ye2-lV-uBF" firstAttribute="centerY" secondItem="eRd-s3-lKn" secondAttribute="centerY" id="TCG-rc-bu7"/>
+                            <constraint firstItem="eRd-s3-lKn" firstAttribute="top" secondItem="ndU-Le-ird" secondAttribute="bottom" constant="17.5" id="YCj-OU-1AN"/>
+                            <constraint firstItem="Z4W-de-ETe" firstAttribute="top" secondItem="oZP-No-fap" secondAttribute="bottom" constant="60" id="YgY-GU-vpr"/>
+                            <constraint firstItem="5Sy-nC-5CX" firstAttribute="trailing" secondItem="U6T-M8-bbJ" secondAttribute="trailing" id="dAS-bv-uZ7"/>
+                            <constraint firstItem="O7z-sC-Aja" firstAttribute="top" secondItem="Z4W-de-ETe" secondAttribute="bottom" constant="28" id="fRs-ax-RwB"/>
+                            <constraint firstItem="5Sy-nC-5CX" firstAttribute="leading" secondItem="U6T-M8-bbJ" secondAttribute="leading" id="hew-lp-wCB"/>
+                            <constraint firstItem="1VB-Kn-0Tt" firstAttribute="baseline" secondItem="ndU-Le-ird" secondAttribute="firstBaseline" id="hus-fb-Yz7"/>
+                            <constraint firstItem="9jI-et-dkE" firstAttribute="top" secondItem="O7z-sC-Aja" secondAttribute="bottom" constant="17.5" id="icZ-LZ-Hnl"/>
+                            <constraint firstItem="ndU-Le-ird" firstAttribute="top" secondItem="9jI-et-dkE" secondAttribute="bottom" constant="17.5" id="k7i-26-pHX"/>
+                            <constraint firstItem="eRd-s3-lKn" firstAttribute="leading" secondItem="ndU-Le-ird" secondAttribute="leading" id="kVC-Yq-eEq"/>
+                            <constraint firstItem="1VB-Kn-0Tt" firstAttribute="centerY" secondItem="ndU-Le-ird" secondAttribute="centerY" id="keD-WF-DVi"/>
+                            <constraint firstItem="Ye2-lV-uBF" firstAttribute="firstBaseline" secondItem="eRd-s3-lKn" secondAttribute="baseline" id="nhn-Qf-Bpx"/>
+                            <constraint firstItem="Ye2-lV-uBF" firstAttribute="trailing" secondItem="5Sy-nC-5CX" secondAttribute="trailing" id="sJZ-vm-tOI"/>
+                            <constraint firstItem="O7z-sC-Aja" firstAttribute="leading" secondItem="Z4W-de-ETe" secondAttribute="leading" id="shg-fj-6wN"/>
+                            <constraint firstItem="U6T-M8-bbJ" firstAttribute="centerY" secondItem="O7z-sC-Aja" secondAttribute="centerY" id="unX-3U-JHU"/>
+                            <constraint firstItem="ndU-Le-ird" firstAttribute="leading" secondItem="9jI-et-dkE" secondAttribute="leading" id="vRh-Xy-SpO"/>
+                            <constraint firstItem="Ye2-lV-uBF" firstAttribute="baseline" secondItem="eRd-s3-lKn" secondAttribute="firstBaseline" id="wfL-Dw-3yH"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pz6-Xe-UTu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1061" y="884"/>
+            <point key="canvasLocation" x="1057.8125" y="882.421875"/>
         </scene>
     </scenes>
 </document>
