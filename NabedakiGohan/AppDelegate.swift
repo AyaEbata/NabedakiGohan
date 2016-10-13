@@ -16,6 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let riceTimeUserDefaults = UserDefaults.standard
+        riceTimeUserDefaults.set(1800, forKey: "waterTime")
+        riceTimeUserDefaults.set(600, forKey: "lowHeatTime")
+        riceTimeUserDefaults.set(10, forKey: "highHeatTime")
+        riceTimeUserDefaults.set(600, forKey: "steamTime")
+        
         return true
     }
 

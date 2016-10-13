@@ -14,6 +14,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         print("Hello, Rice!")
+        
+        // 出力テスト
+//        let defaults = UserDefaults.standard
+//        let waterTime = defaults.integer(forKey: "waterTime")
+//        print(waterTime)
     }
 
     override func didReceiveMemoryWarning() {
