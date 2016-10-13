@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		033770FC1DAFE19E00FCFB23 /* HowToCookRiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033770FB1DAFE19E00FCFB23 /* HowToCookRiceController.swift */; };
+		033770FE1DAFE1F700FCFB23 /* TodayImpressionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033770FD1DAFE1F700FCFB23 /* TodayImpressionsController.swift */; };
 		03FCA2931DAE53F900713F9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FCA2921DAE53F900713F9F /* AppDelegate.swift */; };
 		03FCA2951DAE53F900713F9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FCA2941DAE53F900713F9F /* ViewController.swift */; };
 		03FCA2981DAE53F900713F9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03FCA2961DAE53F900713F9F /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		033770FB1DAFE19E00FCFB23 /* HowToCookRiceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowToCookRiceController.swift; sourceTree = "<group>"; };
+		033770FD1DAFE1F700FCFB23 /* TodayImpressionsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayImpressionsController.swift; sourceTree = "<group>"; };
 		03FCA28F1DAE53F900713F9F /* NabedakiGohan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NabedakiGohan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03FCA2921DAE53F900713F9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03FCA2941DAE53F900713F9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 				03FCA2991DAE53F900713F9F /* Assets.xcassets */,
 				03FCA29B1DAE53F900713F9F /* LaunchScreen.storyboard */,
 				03FCA29E1DAE53F900713F9F /* Info.plist */,
+				033770FB1DAFE19E00FCFB23 /* HowToCookRiceController.swift */,
+				033770FD1DAFE1F700FCFB23 /* TodayImpressionsController.swift */,
 			);
 			path = NabedakiGohan;
 			sourceTree = "<group>";
@@ -260,8 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				033770FE1DAFE1F700FCFB23 /* TodayImpressionsController.swift in Sources */,
 				03FCA2951DAE53F900713F9F /* ViewController.swift in Sources */,
 				03FCA2931DAE53F900713F9F /* AppDelegate.swift in Sources */,
+				033770FC1DAFE19E00FCFB23 /* HowToCookRiceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,6 +516,7 @@
 				03FCA2B91DAE53F900713F9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		03FCA2BA1DAE53F900713F9F /* Build configuration list for PBXNativeTarget "NabedakiGohanTests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +525,7 @@
 				03FCA2BC1DAE53F900713F9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		03FCA2BD1DAE53F900713F9F /* Build configuration list for PBXNativeTarget "NabedakiGohanUITests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +534,7 @@
 				03FCA2BF1DAE53F900713F9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

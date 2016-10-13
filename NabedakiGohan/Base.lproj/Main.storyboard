@@ -65,7 +65,7 @@
                         <viewControllerLayoutGuide type="top" id="gR0-98-yJ2"/>
                         <viewControllerLayoutGuide type="bottom" id="fAT-wM-vyU"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="DJa-fo-H5f">
+                    <view key="view" contentMode="scaleToFill" id="DJa-fo-H5f" customClass="HowToCookRiceController">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -255,7 +255,7 @@
                         <viewControllerLayoutGuide type="top" id="oZP-No-fap"/>
                         <viewControllerLayoutGuide type="bottom" id="h1d-c6-laK"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="TLx-Gc-oxw">
+                    <view key="view" contentMode="scaleToFill" id="TLx-Gc-oxw" customClass="TodayImpressionsController">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
