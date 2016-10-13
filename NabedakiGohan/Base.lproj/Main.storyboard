@@ -178,17 +178,17 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DY2-Kk-i9z">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="J4X-ur-aDs"/>
-                                </constraints>
-                                <state key="normal" title="TOP"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2d-g4-keU">
                                 <state key="normal" title="終了"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOw-nd-1Ah">
                                 <state key="normal" title="ない!"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DY2-Kk-i9z">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="J4X-ur-aDs"/>
+                                </constraints>
+                                <state key="normal" title="TOP"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -206,7 +206,7 @@
                             <constraint firstItem="DY2-Kk-i9z" firstAttribute="leading" secondItem="DJa-fo-H5f" secondAttribute="leading" id="DEc-Nd-vDJ"/>
                             <constraint firstItem="H8g-8b-Uj4" firstAttribute="leading" secondItem="fmG-iU-oIH" secondAttribute="leading" id="Dvo-4I-GEo"/>
                             <constraint firstItem="o8f-eT-5UR" firstAttribute="baseline" secondItem="6HG-tZ-PaF" secondAttribute="baseline" id="ECU-yj-utr"/>
-                            <constraint firstItem="DY2-Kk-i9z" firstAttribute="top" secondItem="DJa-fo-H5f" secondAttribute="top" id="FbF-71-cwN"/>
+                            <constraint firstItem="DY2-Kk-i9z" firstAttribute="top" secondItem="DJa-fo-H5f" secondAttribute="top" constant="20" id="FbF-71-cwN"/>
                             <constraint firstItem="OAh-JI-e05" firstAttribute="trailing" secondItem="8bl-9B-Ub6" secondAttribute="trailing" id="IH6-dd-ABf"/>
                             <constraint firstItem="8bl-9B-Ub6" firstAttribute="trailing" secondItem="o8f-eT-5UR" secondAttribute="trailing" id="Iki-2f-8cm"/>
                             <constraint firstItem="Uwa-8d-rjS" firstAttribute="leading" secondItem="H8g-8b-Uj4" secondAttribute="leading" id="JHK-Ng-ESy"/>
@@ -366,14 +366,14 @@
                             <constraint firstItem="O7z-sC-Aja" firstAttribute="leading" secondItem="Z4W-de-ETe" secondAttribute="leading" id="shg-fj-6wN"/>
                             <constraint firstItem="U6T-M8-bbJ" firstAttribute="centerY" secondItem="O7z-sC-Aja" secondAttribute="centerY" id="unX-3U-JHU"/>
                             <constraint firstItem="ndU-Le-ird" firstAttribute="leading" secondItem="9jI-et-dkE" secondAttribute="leading" id="vRh-Xy-SpO"/>
-                            <constraint firstItem="guU-L4-MHj" firstAttribute="top" secondItem="TLx-Gc-oxw" secondAttribute="top" id="vsm-NP-o7s"/>
+                            <constraint firstItem="guU-L4-MHj" firstAttribute="top" secondItem="TLx-Gc-oxw" secondAttribute="top" constant="20" id="vsm-NP-o7s"/>
                             <constraint firstItem="Ye2-lV-uBF" firstAttribute="baseline" secondItem="eRd-s3-lKn" secondAttribute="firstBaseline" id="wfL-Dw-3yH"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pz6-Xe-UTu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057.8125" y="882.421875"/>
+            <point key="canvasLocation" x="1058" y="888"/>
         </scene>
     </scenes>
 </document>
