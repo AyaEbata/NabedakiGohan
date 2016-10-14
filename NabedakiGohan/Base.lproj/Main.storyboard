@@ -146,6 +146,9 @@
                                     <constraint firstAttribute="width" constant="46" id="esj-1U-oqu"/>
                                 </constraints>
                                 <state key="normal" title="OK!"/>
+                                <connections>
+                                    <action selector="washRiceButtonClicked" destination="5Lp-qg-IIW" eventType="touchUpInside" id="Dns-an-4BC"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8f-eT-5UR">
                                 <constraints>

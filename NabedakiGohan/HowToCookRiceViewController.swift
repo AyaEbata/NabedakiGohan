@@ -20,13 +20,15 @@ class HowToCookRiceViewController: UIViewController {
         super.viewDidLoad()
         
         initUserDefaults()
-        
-        riceTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(timerUpdate), userInfo: nil, repeats: true)
     }
     
     func initUserDefaults() {
         waterTime = riceTimeUserDefaults.integer(forKey: "waterTime")
         waterTimeLabel.text = timerString(time: waterTime)
+    }
+
+    @IBAction func washRiceButtonClicked(){
+        riceTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(timerUpdate), userInfo: nil, repeats: true)
     }
 
     func timerUpdate(timer: Timer) {
