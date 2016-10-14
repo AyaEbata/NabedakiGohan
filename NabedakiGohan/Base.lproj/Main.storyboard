@@ -327,15 +327,6 @@
                                     <segment title="おおい"/>
                                 </segments>
                             </segmentedControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ye2-lV-uBF">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="28" id="Bes-gO-s4y"/>
-                                </constraints>
-                                <segments>
-                                    <segment title="ある"/>
-                                    <segment title="ない"/>
-                                </segments>
-                            </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guU-L4-MHj">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="ykB-Xx-KIe"/>
@@ -345,6 +336,15 @@
                                     <segue destination="S1z-Iy-JJE" kind="unwind" unwindAction="unwindToTopWithSegue:" id="NBp-G0-0wg"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ye2-lV-uBF">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="Bes-gO-s4y"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="ある"/>
+                                    <segment title="ない"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -356,25 +356,25 @@
                             <constraint firstItem="Ye2-lV-uBF" firstAttribute="leading" secondItem="1VB-Kn-0Tt" secondAttribute="leading" id="F7H-V6-cee"/>
                             <constraint firstItem="Ye2-lV-uBF" firstAttribute="trailing" secondItem="1VB-Kn-0Tt" secondAttribute="trailing" id="FDG-CY-wez"/>
                             <constraint firstItem="9jI-et-dkE" firstAttribute="leading" secondItem="O7z-sC-Aja" secondAttribute="leading" id="FvO-bY-Bvo"/>
-                            <constraint firstItem="1VB-Kn-0Tt" firstAttribute="firstBaseline" secondItem="ndU-Le-ird" secondAttribute="baseline" id="GSB-G9-GIc"/>
+                            <constraint firstItem="1VB-Kn-0Tt" firstAttribute="firstBaseline" secondItem="ndU-Le-ird" secondAttribute="baseline" constant="-1.5" id="GSB-G9-GIc"/>
                             <constraint firstItem="Ye2-lV-uBF" firstAttribute="centerY" secondItem="eRd-s3-lKn" secondAttribute="centerY" id="TCG-rc-bu7"/>
-                            <constraint firstItem="eRd-s3-lKn" firstAttribute="top" secondItem="ndU-Le-ird" secondAttribute="bottom" constant="17.5" id="YCj-OU-1AN"/>
+                            <constraint firstItem="eRd-s3-lKn" firstAttribute="top" secondItem="ndU-Le-ird" secondAttribute="bottom" constant="25" id="YCj-OU-1AN"/>
                             <constraint firstItem="Z4W-de-ETe" firstAttribute="top" secondItem="oZP-No-fap" secondAttribute="bottom" constant="60" id="YgY-GU-vpr"/>
                             <constraint firstItem="5Sy-nC-5CX" firstAttribute="trailing" secondItem="U6T-M8-bbJ" secondAttribute="trailing" id="dAS-bv-uZ7"/>
-                            <constraint firstItem="O7z-sC-Aja" firstAttribute="top" secondItem="Z4W-de-ETe" secondAttribute="bottom" constant="28" id="fRs-ax-RwB"/>
+                            <constraint firstItem="O7z-sC-Aja" firstAttribute="top" secondItem="Z4W-de-ETe" secondAttribute="bottom" constant="35" id="fRs-ax-RwB"/>
                             <constraint firstItem="5Sy-nC-5CX" firstAttribute="leading" secondItem="U6T-M8-bbJ" secondAttribute="leading" id="hew-lp-wCB"/>
-                            <constraint firstItem="1VB-Kn-0Tt" firstAttribute="baseline" secondItem="ndU-Le-ird" secondAttribute="firstBaseline" id="hus-fb-Yz7"/>
-                            <constraint firstItem="9jI-et-dkE" firstAttribute="top" secondItem="O7z-sC-Aja" secondAttribute="bottom" constant="17.5" id="icZ-LZ-Hnl"/>
-                            <constraint firstItem="ndU-Le-ird" firstAttribute="top" secondItem="9jI-et-dkE" secondAttribute="bottom" constant="17.5" id="k7i-26-pHX"/>
+                            <constraint firstItem="1VB-Kn-0Tt" firstAttribute="baseline" secondItem="ndU-Le-ird" secondAttribute="firstBaseline" constant="-1" id="hus-fb-Yz7"/>
+                            <constraint firstItem="9jI-et-dkE" firstAttribute="top" secondItem="O7z-sC-Aja" secondAttribute="bottom" constant="25" id="icZ-LZ-Hnl"/>
+                            <constraint firstItem="ndU-Le-ird" firstAttribute="top" secondItem="9jI-et-dkE" secondAttribute="bottom" constant="25" id="k7i-26-pHX"/>
                             <constraint firstItem="eRd-s3-lKn" firstAttribute="leading" secondItem="ndU-Le-ird" secondAttribute="leading" id="kVC-Yq-eEq"/>
                             <constraint firstItem="1VB-Kn-0Tt" firstAttribute="centerY" secondItem="ndU-Le-ird" secondAttribute="centerY" id="keD-WF-DVi"/>
-                            <constraint firstItem="Ye2-lV-uBF" firstAttribute="firstBaseline" secondItem="eRd-s3-lKn" secondAttribute="baseline" id="nhn-Qf-Bpx"/>
+                            <constraint firstItem="Ye2-lV-uBF" firstAttribute="firstBaseline" secondItem="eRd-s3-lKn" secondAttribute="baseline" constant="-1.5" id="nhn-Qf-Bpx"/>
                             <constraint firstItem="Ye2-lV-uBF" firstAttribute="trailing" secondItem="5Sy-nC-5CX" secondAttribute="trailing" id="sJZ-vm-tOI"/>
                             <constraint firstItem="O7z-sC-Aja" firstAttribute="leading" secondItem="Z4W-de-ETe" secondAttribute="leading" id="shg-fj-6wN"/>
                             <constraint firstItem="U6T-M8-bbJ" firstAttribute="centerY" secondItem="O7z-sC-Aja" secondAttribute="centerY" id="unX-3U-JHU"/>
                             <constraint firstItem="ndU-Le-ird" firstAttribute="leading" secondItem="9jI-et-dkE" secondAttribute="leading" id="vRh-Xy-SpO"/>
                             <constraint firstItem="guU-L4-MHj" firstAttribute="top" secondItem="TLx-Gc-oxw" secondAttribute="top" constant="20" id="vsm-NP-o7s"/>
-                            <constraint firstItem="Ye2-lV-uBF" firstAttribute="baseline" secondItem="eRd-s3-lKn" secondAttribute="firstBaseline" id="wfL-Dw-3yH"/>
+                            <constraint firstItem="Ye2-lV-uBF" firstAttribute="baseline" secondItem="eRd-s3-lKn" secondAttribute="firstBaseline" constant="-1" id="wfL-Dw-3yH"/>
                         </constraints>
                     </view>
                 </viewController>
