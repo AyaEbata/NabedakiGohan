@@ -10,7 +10,7 @@ import UIKit
 
 class HowToCookRiceViewController: UIViewController {
 
-    var riceTimer: Timer!
+    var riceTimer = Timer()
     let riceTimeUserDefaults = UserDefaults.standard
     var waterTime: Int!
     
@@ -24,6 +24,7 @@ class HowToCookRiceViewController: UIViewController {
     
     func initUserDefaults() {
         waterTime = riceTimeUserDefaults.integer(forKey: "waterTime")
+        waterTime = 5
         waterTimeLabel.text = timerString(time: waterTime)
     }
 
@@ -32,13 +33,12 @@ class HowToCookRiceViewController: UIViewController {
     }
 
     func timerUpdate(timer: Timer) {
-        print("\(String(format: "%02d", Int(floor(Double(waterTime/60))))):\(String(format: "%02d", waterTime%60))")
-
         waterTime = waterTime - 1
         waterTimeLabel.text = timerString(time: waterTime)
         
         if waterTime == 0 {
             riceTimer.invalidate()
+            finishAlert()
         }
     }
     
@@ -46,9 +46,22 @@ class HowToCookRiceViewController: UIViewController {
         return "\(String(format: "%02d", Int(floor(Double(time/60))))):\(String(format: "%02d", time%60))"
     }
     
+    func finishAlert() {
+        let alert = UIAlertController(title: "つぎのこうてい", message: "中火にして沸騰してね！", preferredStyle: .alert)
+        let nextAction = UIAlertAction(title: "次へ", style: .default, handler: {
+            (action:UIAlertAction!) -> Void in
+            print("次へ")
+        })
+        alert.addAction(nextAction)
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        riceTimer.invalidate()
+        
+        if riceTimer.isValid == true {
+            riceTimer.invalidate()
+        }
     }
     
 }
