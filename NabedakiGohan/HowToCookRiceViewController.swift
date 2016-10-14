@@ -19,21 +19,29 @@ class HowToCookRiceViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        waterTime = riceTimeUserDefaults.integer(forKey: "waterTime")
-        waterTimeLabel.text = "\(String(format: "%02d", Int(floor(Double(waterTime/60))))):\(String(format: "%02d", waterTime%60))"
+        initUserDefaults()
         
         riceTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(timerUpdate), userInfo: nil, repeats: true)
     }
     
+    func initUserDefaults() {
+        waterTime = riceTimeUserDefaults.integer(forKey: "waterTime")
+        waterTimeLabel.text = timerString(time: waterTime)
+    }
+
     func timerUpdate(timer: Timer) {
         print("\(String(format: "%02d", Int(floor(Double(waterTime/60))))):\(String(format: "%02d", waterTime%60))")
 
         waterTime = waterTime - 1
-        waterTimeLabel.text = "\(String(format: "%02d", Int(floor(Double(waterTime/60))))):\(String(format: "%02d", waterTime%60))"
+        waterTimeLabel.text = timerString(time: waterTime)
         
         if waterTime == 0 {
             riceTimer.invalidate()
         }
+    }
+    
+    func timerString(time: Int) -> String {
+        return "\(String(format: "%02d", Int(floor(Double(time/60))))):\(String(format: "%02d", time%60))"
     }
     
     override func viewWillDisappear(_ animated: Bool) {
