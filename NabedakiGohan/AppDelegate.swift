@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         riceTimeUserDefaults.set(600, forKey: "lowHeatTime")
         riceTimeUserDefaults.set(10, forKey: "highHeatTime")
         riceTimeUserDefaults.set(600, forKey: "steamTime")
+        riceTimeUserDefaults.synchronize()
         
         return true
     }

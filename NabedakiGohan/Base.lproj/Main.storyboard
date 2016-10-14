@@ -147,7 +147,7 @@
                                 </constraints>
                                 <state key="normal" title="OK!"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8f-eT-5UR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8f-eT-5UR">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="Trg-Ex-jWa"/>
                                 </constraints>
@@ -245,6 +245,9 @@
                             <constraint firstItem="MOw-nd-1Ah" firstAttribute="leading" secondItem="OAh-JI-e05" secondAttribute="leading" id="zFh-Xc-1SF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="waterTimeLabel" destination="o8f-eT-5UR" id="dHr-Sz-MZb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xLY-nU-B3b" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="qMg-tn-CbC" userLabel="Exit" sceneMemberID="exit"/>
