@@ -147,7 +147,7 @@
                                 </constraints>
                                 <state key="normal" title="OK!"/>
                                 <connections>
-                                    <action selector="washRiceButtonClicked" destination="5Lp-qg-IIW" eventType="touchUpInside" id="Dns-an-4BC"/>
+                                    <action selector="washButtonClicked" destination="5Lp-qg-IIW" eventType="touchUpInside" id="WKU-YM-cYX"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8f-eT-5UR">
@@ -160,8 +160,11 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bl-9B-Ub6">
                                 <state key="normal" title="沸騰した!"/>
+                                <connections>
+                                    <action selector="boilButtonClicked" destination="5Lp-qg-IIW" eventType="touchUpInside" id="WYe-0s-UNj"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAh-JI-e05">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAh-JI-e05">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -205,7 +208,7 @@
                             <constraint firstItem="kud-yW-qgd" firstAttribute="leading" secondItem="z40-Pb-jgh" secondAttribute="leading" id="4eO-O1-slh"/>
                             <constraint firstItem="Uwa-8d-rjS" firstAttribute="top" secondItem="H8g-8b-Uj4" secondAttribute="bottom" constant="17.5" id="705-ee-Llv"/>
                             <constraint firstItem="PlN-x2-t0h" firstAttribute="leading" secondItem="X0x-cA-8uO" secondAttribute="leading" id="7lL-lo-M9B"/>
-                            <constraint firstItem="OAh-JI-e05" firstAttribute="leading" secondItem="yMS-A3-Ijc" secondAttribute="leading" id="AlP-0J-FnO"/>
+                            <constraint firstItem="OAh-JI-e05" firstAttribute="leading" secondItem="yMS-A3-Ijc" secondAttribute="leading" constant="-4" id="AlP-0J-FnO"/>
                             <constraint firstItem="MOw-nd-1Ah" firstAttribute="trailing" secondItem="OAh-JI-e05" secondAttribute="trailing" id="Aw6-lx-5h0"/>
                             <constraint firstItem="z40-Pb-jgh" firstAttribute="trailing" secondItem="Cwj-Wq-Cub" secondAttribute="trailing" id="BBh-3Y-hoF"/>
                             <constraint firstItem="z40-Pb-jgh" firstAttribute="leading" secondItem="Cwj-Wq-Cub" secondAttribute="leading" id="Bbm-uh-aco"/>
@@ -245,11 +248,12 @@
                             <constraint firstItem="6HG-tZ-PaF" firstAttribute="leading" secondItem="OLo-Kp-eU9" secondAttribute="leading" id="ukU-fe-NLv"/>
                             <constraint firstItem="s2d-g4-keU" firstAttribute="leading" secondItem="MOw-nd-1Ah" secondAttribute="leading" id="vdz-se-G1r"/>
                             <constraint firstItem="kud-yW-qgd" firstAttribute="baseline" secondItem="X0x-cA-8uO" secondAttribute="baseline" id="wzE-8d-Wc0"/>
-                            <constraint firstItem="MOw-nd-1Ah" firstAttribute="leading" secondItem="OAh-JI-e05" secondAttribute="leading" id="zFh-Xc-1SF"/>
+                            <constraint firstItem="MOw-nd-1Ah" firstAttribute="leading" secondItem="OAh-JI-e05" secondAttribute="leading" constant="4" id="zFh-Xc-1SF"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="waterTimeLabel" destination="o8f-eT-5UR" id="dHr-Sz-MZb"/>
+                        <outlet property="lowHeatTimeLabel" destination="OAh-JI-e05" id="n28-BY-8Pa"/>
+                        <outlet property="waterTimeLabel" destination="o8f-eT-5UR" id="KkD-vr-Ec2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xLY-nU-B3b" userLabel="First Responder" sceneMemberID="firstResponder"/>
