@@ -15,9 +15,11 @@ class HowToCookRiceViewController: UIViewController {
     
     var waterTime: Int = 0
     var lowHeatTime: Int = 0
+    var addTime: Int = 5  // テスト用 60
     
     @IBOutlet weak var waterTimeLabel: UILabel!
     @IBOutlet weak var lowHeatTimeLabel: UILabel!
+    @IBOutlet weak var addTimeLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -102,7 +104,13 @@ class HowToCookRiceViewController: UIViewController {
     }
     
     func addTimerUpdate() {
-        // addTimer action
+        addTime -= 1
+        addTimeLabel.text = timerString(time: addTime)
+        
+        if addTime == 0 {
+            riceTimer.invalidate()
+            alert(type: "add", message: "水分が残ってないか確認してね！")
+        }
     }
     
     func highHeatTimerUpdate() {
