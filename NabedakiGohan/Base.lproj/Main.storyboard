@@ -18,7 +18,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21B-Mj-MX9">
@@ -66,7 +66,7 @@
                         <viewControllerLayoutGuide type="bottom" id="fAT-wM-vyU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="DJa-fo-H5f">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ごはんをたく" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNl-c4-AOK">
@@ -215,6 +215,22 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfp-WB-kC1">
+                                <color key="backgroundColor" red="0.99159079790000004" green="0.8893681765" blue="0.96290534729999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="すたーと">
+                                    <color key="titleColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startButtonClicked" destination="5Lp-qg-IIW" eventType="touchUpInside" id="iq5-nj-CIT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -250,12 +266,16 @@
                             <constraint firstItem="6HG-tZ-PaF" firstAttribute="top" secondItem="OLo-Kp-eU9" secondAttribute="bottom" constant="17.5" id="gyr-66-swz"/>
                             <constraint firstItem="GNe-Sp-4Y0" firstAttribute="leading" secondItem="6HG-tZ-PaF" secondAttribute="leading" id="hog-nS-YCV"/>
                             <constraint firstItem="MOw-nd-1Ah" firstAttribute="leading" secondItem="Hkc-Zr-NL5" secondAttribute="trailing" constant="7" id="isX-il-0HY"/>
+                            <constraint firstItem="gfp-WB-kC1" firstAttribute="top" secondItem="gR0-98-yJ2" secondAttribute="bottom" constant="55" id="kSc-MW-h7T"/>
                             <constraint firstItem="kud-yW-qgd" firstAttribute="centerY" secondItem="X0x-cA-8uO" secondAttribute="centerY" id="kqr-qX-6ku"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yMS-A3-Ijc" secondAttribute="trailing" constant="18" id="lcH-Yh-sin"/>
                             <constraint firstItem="MOw-nd-1Ah" firstAttribute="centerY" secondItem="H8g-8b-Uj4" secondAttribute="centerY" id="pP5-a2-joz"/>
+                            <constraint firstItem="gfp-WB-kC1" firstAttribute="trailing" secondItem="yMS-A3-Ijc" secondAttribute="trailing" id="pXd-CK-uli"/>
+                            <constraint firstItem="yMS-A3-Ijc" firstAttribute="top" secondItem="gfp-WB-kC1" secondAttribute="bottom" constant="21" id="phG-qs-Dor"/>
                             <constraint firstItem="Cwj-Wq-Cub" firstAttribute="trailing" secondItem="MOw-nd-1Ah" secondAttribute="trailing" id="rw4-cX-Cxj"/>
                             <constraint firstItem="6HG-tZ-PaF" firstAttribute="leading" secondItem="OLo-Kp-eU9" secondAttribute="leading" id="ukU-fe-NLv"/>
                             <constraint firstItem="OAh-JI-e05" firstAttribute="trailing" secondItem="8bl-9B-Ub6" secondAttribute="trailing" id="uoE-Df-6bT"/>
+                            <constraint firstItem="gfp-WB-kC1" firstAttribute="centerX" secondItem="Hkc-Zr-NL5" secondAttribute="centerX" id="wcy-Fu-mLY"/>
                         </constraints>
                     </view>
                     <connections>
@@ -288,7 +308,7 @@
                         <viewControllerLayoutGuide type="bottom" id="h1d-c6-laK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TLx-Gc-oxw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="きょうのかんそう" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4W-de-ETe">

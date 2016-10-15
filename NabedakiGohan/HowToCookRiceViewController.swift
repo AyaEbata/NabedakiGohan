@@ -51,6 +51,9 @@ class HowToCookRiceViewController: UIViewController {
         highHeatTimeLabel.text = timerString(time: highHeatTime)
         steamTimeLabel.text = timerString(time: steamTime)
     }
+    @IBAction func startButtonClicked() {
+        firstAlert()
+    }
     
     @IBAction func washButtonClicked() {
         alert(type: "wash", message: "水に浸してね！")
@@ -67,7 +70,16 @@ class HowToCookRiceViewController: UIViewController {
     @IBAction func withoutWaterButtonClicked() {
         alert(type: "withoutWater", message: "強火にしてね！")
     }
-    
+
+    func firstAlert() {
+        let alert = UIAlertController(title: "さいしょのこうてい", message: "米を研いでね！", preferredStyle: .alert)
+        let nextAction = UIAlertAction(title: "次へ", style: .default, handler: {(action:UIAlertAction!) -> Void in
+            // action
+        })
+        alert.addAction(nextAction)
+        self.present(alert, animated: true, completion: nil)
+    }
+
     func alert(type: String, message: String) {
         let alert = UIAlertController(title: "つぎのこうてい", message: message, preferredStyle: .alert)
         let nextAction = UIAlertAction(title: "次へ", style: .default, handler: {(action:UIAlertAction!) -> Void in
