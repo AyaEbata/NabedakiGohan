@@ -217,6 +217,9 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfp-WB-kC1">
                                 <color key="backgroundColor" red="0.99159079790000004" green="0.8893681765" blue="0.96290534729999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="uE4-Jr-Mwz"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                 <state key="normal" title="すたーと">
                                     <color key="titleColor" red="1" green="0.40000000000000002" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -406,7 +409,20 @@
                                 </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUw-QG-ylK">
-                                <state key="normal" title="さぶみっと"/>
+                                <color key="backgroundColor" red="0.99159079790000004" green="0.8893681765" blue="0.96290534729999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="jFn-gW-x3Z"/>
+                                    <constraint firstAttribute="width" constant="95" id="oax-Ut-kWG"/>
+                                </constraints>
+                                <state key="normal" title="さぶみっと">
+                                    <color key="titleColor" red="1" green="0.40000000000000002" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="subminButtonClicked" destination="aF2-qC-Wzh" eventType="touchUpInside" id="A28-dg-fua"/>
                                     <segue destination="S1z-Iy-JJE" kind="unwind" unwindAction="unwindToTopWithSegue:" id="YP2-8n-dHC"/>
@@ -419,19 +435,19 @@
                             <constraint firstItem="Z4W-de-ETe" firstAttribute="leading" secondItem="TLx-Gc-oxw" secondAttribute="leadingMargin" constant="25" id="3e2-xy-Xak"/>
                             <constraint firstAttribute="trailingMargin" secondItem="U6T-M8-bbJ" secondAttribute="trailing" constant="18" id="45m-94-3aj"/>
                             <constraint firstItem="guU-L4-MHj" firstAttribute="leading" secondItem="TLx-Gc-oxw" secondAttribute="leading" id="4OT-vc-Y6s"/>
+                            <constraint firstItem="fUw-QG-ylK" firstAttribute="top" secondItem="Ye2-lV-uBF" secondAttribute="bottom" constant="57" id="6RW-Bh-228"/>
                             <constraint firstItem="Ye2-lV-uBF" firstAttribute="leading" secondItem="5Sy-nC-5CX" secondAttribute="leading" id="Cjd-TG-7lJ"/>
                             <constraint firstItem="Ye2-lV-uBF" firstAttribute="leading" secondItem="1VB-Kn-0Tt" secondAttribute="leading" id="F7H-V6-cee"/>
                             <constraint firstItem="Ye2-lV-uBF" firstAttribute="trailing" secondItem="1VB-Kn-0Tt" secondAttribute="trailing" id="FDG-CY-wez"/>
                             <constraint firstItem="9jI-et-dkE" firstAttribute="leading" secondItem="O7z-sC-Aja" secondAttribute="leading" id="FvO-bY-Bvo"/>
                             <constraint firstItem="1VB-Kn-0Tt" firstAttribute="firstBaseline" secondItem="ndU-Le-ird" secondAttribute="baseline" constant="-1.5" id="GSB-G9-GIc"/>
-                            <constraint firstItem="fUw-QG-ylK" firstAttribute="centerX" secondItem="TLx-Gc-oxw" secondAttribute="centerX" id="QWh-vM-1Wz"/>
+                            <constraint firstItem="fUw-QG-ylK" firstAttribute="centerX" secondItem="TLx-Gc-oxw" secondAttribute="centerX" id="Jl2-oH-fsR"/>
                             <constraint firstItem="Ye2-lV-uBF" firstAttribute="centerY" secondItem="eRd-s3-lKn" secondAttribute="centerY" id="TCG-rc-bu7"/>
                             <constraint firstItem="eRd-s3-lKn" firstAttribute="top" secondItem="ndU-Le-ird" secondAttribute="bottom" constant="25" id="YCj-OU-1AN"/>
                             <constraint firstItem="Z4W-de-ETe" firstAttribute="top" secondItem="oZP-No-fap" secondAttribute="bottom" constant="60" id="YgY-GU-vpr"/>
                             <constraint firstItem="5Sy-nC-5CX" firstAttribute="trailing" secondItem="U6T-M8-bbJ" secondAttribute="trailing" id="dAS-bv-uZ7"/>
                             <constraint firstItem="O7z-sC-Aja" firstAttribute="top" secondItem="Z4W-de-ETe" secondAttribute="bottom" constant="50" id="fRs-ax-RwB"/>
                             <constraint firstItem="5Sy-nC-5CX" firstAttribute="leading" secondItem="U6T-M8-bbJ" secondAttribute="leading" id="hew-lp-wCB"/>
-                            <constraint firstItem="fUw-QG-ylK" firstAttribute="top" secondItem="Ye2-lV-uBF" secondAttribute="bottom" constant="50" id="hkh-je-d8F"/>
                             <constraint firstItem="1VB-Kn-0Tt" firstAttribute="baseline" secondItem="ndU-Le-ird" secondAttribute="firstBaseline" constant="-1" id="hus-fb-Yz7"/>
                             <constraint firstItem="9jI-et-dkE" firstAttribute="top" secondItem="O7z-sC-Aja" secondAttribute="bottom" constant="25" id="icZ-LZ-Hnl"/>
                             <constraint firstItem="ndU-Le-ird" firstAttribute="top" secondItem="9jI-et-dkE" secondAttribute="bottom" constant="25" id="k7i-26-pHX"/>
