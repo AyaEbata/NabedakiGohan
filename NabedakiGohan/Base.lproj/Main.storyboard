@@ -69,7 +69,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ごはんのたきかた" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNl-c4-AOK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ごはんをたく" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNl-c4-AOK">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="198" id="a49-aI-xWY"/>
                                 </constraints>
@@ -260,7 +260,7 @@
                     </view>
                     <connections>
                         <outlet property="addTimeLabel" destination="Cwj-Wq-Cub" id="Vw4-hr-Bzi"/>
-                        <outlet property="highHeatTimeLabel" destination="z40-Pb-jgh" id="mCN-dn-TwH"/>
+                        <outlet property="highHeatTimeLabel" destination="z40-Pb-jgh" id="ldX-gb-hnc"/>
                         <outlet property="lowHeatTimeLabel" destination="OAh-JI-e05" id="n28-BY-8Pa"/>
                         <outlet property="steamTimeLabel" destination="kud-yW-qgd" id="o4T-hN-NZo"/>
                         <outlet property="waterTimeLabel" destination="o8f-eT-5UR" id="KkD-vr-Ec2"/>
@@ -283,9 +283,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="かんそう" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4W-de-ETe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="きょうのかんそう" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4W-de-ETe">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="GJA-Yz-KHd"/>
+                                    <constraint firstAttribute="width" constant="198" id="GJA-Yz-KHd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
@@ -320,7 +320,7 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="U6T-M8-bbJ">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="U6T-M8-bbJ">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="169" id="HPd-gT-e8H"/>
                                 </constraints>
@@ -329,15 +329,21 @@
                                     <segment title="良さげ"/>
                                     <segment title="かたい"/>
                                 </segments>
+                                <connections>
+                                    <action selector="softSegumentCheckedWithSender:" destination="aF2-qC-Wzh" eventType="valueChanged" id="IWU-N4-jyl"/>
+                                </connections>
                             </segmentedControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5Sy-nC-5CX">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="5Sy-nC-5CX">
                                 <segments>
                                     <segment title="少ない"/>
                                     <segment title="良さげ"/>
                                     <segment title="おおい"/>
                                 </segments>
+                                <connections>
+                                    <action selector="waterSegumentCheckedWithSender:" destination="aF2-qC-Wzh" eventType="valueChanged" id="1GV-W3-7Yl"/>
+                                </connections>
                             </segmentedControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1VB-Kn-0Tt">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="1VB-Kn-0Tt">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="Qav-C0-Kts"/>
                                 </constraints>
@@ -346,6 +352,9 @@
                                     <segment title="良さげ"/>
                                     <segment title="おおい"/>
                                 </segments>
+                                <connections>
+                                    <action selector="burntSegumentCheckedWithSender:" destination="aF2-qC-Wzh" eventType="valueChanged" id="CYh-4O-qsb"/>
+                                </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guU-L4-MHj">
                                 <constraints>
@@ -356,7 +365,7 @@
                                     <segue destination="S1z-Iy-JJE" kind="unwind" unwindAction="unwindToTopWithSegue:" id="NBp-G0-0wg"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ye2-lV-uBF">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ye2-lV-uBF">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="Bes-gO-s4y"/>
                                 </constraints>
@@ -364,7 +373,17 @@
                                     <segment title="ある"/>
                                     <segment title="ない"/>
                                 </segments>
+                                <connections>
+                                    <action selector="coreSegumentCheckedWithSender:" destination="aF2-qC-Wzh" eventType="valueChanged" id="s2y-Bp-VLB"/>
+                                </connections>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUw-QG-ylK">
+                                <state key="normal" title="さぶみっと"/>
+                                <connections>
+                                    <action selector="subminButtonClicked" destination="aF2-qC-Wzh" eventType="touchUpInside" id="A28-dg-fua"/>
+                                    <segue destination="S1z-Iy-JJE" kind="unwind" unwindAction="unwindToTopWithSegue:" id="YP2-8n-dHC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -377,12 +396,14 @@
                             <constraint firstItem="Ye2-lV-uBF" firstAttribute="trailing" secondItem="1VB-Kn-0Tt" secondAttribute="trailing" id="FDG-CY-wez"/>
                             <constraint firstItem="9jI-et-dkE" firstAttribute="leading" secondItem="O7z-sC-Aja" secondAttribute="leading" id="FvO-bY-Bvo"/>
                             <constraint firstItem="1VB-Kn-0Tt" firstAttribute="firstBaseline" secondItem="ndU-Le-ird" secondAttribute="baseline" constant="-1.5" id="GSB-G9-GIc"/>
+                            <constraint firstItem="fUw-QG-ylK" firstAttribute="centerX" secondItem="TLx-Gc-oxw" secondAttribute="centerX" id="QWh-vM-1Wz"/>
                             <constraint firstItem="Ye2-lV-uBF" firstAttribute="centerY" secondItem="eRd-s3-lKn" secondAttribute="centerY" id="TCG-rc-bu7"/>
                             <constraint firstItem="eRd-s3-lKn" firstAttribute="top" secondItem="ndU-Le-ird" secondAttribute="bottom" constant="25" id="YCj-OU-1AN"/>
                             <constraint firstItem="Z4W-de-ETe" firstAttribute="top" secondItem="oZP-No-fap" secondAttribute="bottom" constant="60" id="YgY-GU-vpr"/>
                             <constraint firstItem="5Sy-nC-5CX" firstAttribute="trailing" secondItem="U6T-M8-bbJ" secondAttribute="trailing" id="dAS-bv-uZ7"/>
-                            <constraint firstItem="O7z-sC-Aja" firstAttribute="top" secondItem="Z4W-de-ETe" secondAttribute="bottom" constant="35" id="fRs-ax-RwB"/>
+                            <constraint firstItem="O7z-sC-Aja" firstAttribute="top" secondItem="Z4W-de-ETe" secondAttribute="bottom" constant="50" id="fRs-ax-RwB"/>
                             <constraint firstItem="5Sy-nC-5CX" firstAttribute="leading" secondItem="U6T-M8-bbJ" secondAttribute="leading" id="hew-lp-wCB"/>
+                            <constraint firstItem="fUw-QG-ylK" firstAttribute="top" secondItem="Ye2-lV-uBF" secondAttribute="bottom" constant="50" id="hkh-je-d8F"/>
                             <constraint firstItem="1VB-Kn-0Tt" firstAttribute="baseline" secondItem="ndU-Le-ird" secondAttribute="firstBaseline" constant="-1" id="hus-fb-Yz7"/>
                             <constraint firstItem="9jI-et-dkE" firstAttribute="top" secondItem="O7z-sC-Aja" secondAttribute="bottom" constant="25" id="icZ-LZ-Hnl"/>
                             <constraint firstItem="ndU-Le-ird" firstAttribute="top" secondItem="9jI-et-dkE" secondAttribute="bottom" constant="25" id="k7i-26-pHX"/>
@@ -401,7 +422,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pz6-Xe-UTu" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="S1z-Iy-JJE" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1058" y="888"/>
+            <point key="canvasLocation" x="1056.8" y="887.40629685157433"/>
         </scene>
     </scenes>
 </document>

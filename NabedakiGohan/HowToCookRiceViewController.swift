@@ -27,14 +27,13 @@ class HowToCookRiceViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        initUserDefaults()
+        setRiceTimeUserDefaults()
     }
     
-    func initUserDefaults() {
+    func setRiceTimeUserDefaults() {
         waterTime = riceTimeUserDefaults.integer(forKey: "waterTime")
         lowHeatTime = riceTimeUserDefaults.integer(forKey: "lowHeatTime")
-        highHeatTime = riceTimeUserDefaults.integer(forKey: "hightHeatTime")
+        highHeatTime = riceTimeUserDefaults.integer(forKey: "highHeatTime")
         steamTime = riceTimeUserDefaults.integer(forKey: "steamTime")
 
         waterTimeLabel.text = timerString(time: waterTime)
