@@ -45,6 +45,14 @@ class HowToCookRiceViewController: UIViewController {
         alert(type: "boil", message: "弱火にしてね！")
     }
     
+    @IBAction func withWaterButtonClicked() {
+        alert(type: "withWater", message: "追加で弱火にかけてね！")
+    }
+
+    @IBAction func withoutWaterButtonClicked() {
+        alert(type: "withoutWater", message: "強火にしてね！")
+    }
+    
     func alert(type: String, message: String) {
         let alert = UIAlertController(title: "つぎのこうてい", message: message, preferredStyle: .alert)
         let nextAction = UIAlertAction(title: "次へ", style: .default, handler: {(action:UIAlertAction!) -> Void in
@@ -60,6 +68,10 @@ class HowToCookRiceViewController: UIViewController {
             setRiceTimer(selector: #selector(waterTimerUpdate))
         case "boil":
             setRiceTimer(selector: #selector(lowHeatTimerUpdate))
+        case "withWater":
+            setRiceTimer(selector: #selector(addTimerUpdate))
+        case "withoutWater":
+            setRiceTimer(selector: #selector(highHeatTimerUpdate))
         default:
             break
         }
@@ -68,7 +80,7 @@ class HowToCookRiceViewController: UIViewController {
     func setRiceTimer(selector: Selector) {
         riceTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: selector, userInfo: nil, repeats: true)
     }
-    
+
     func waterTimerUpdate(timer: Timer) {
         waterTime -= 1
         waterTimeLabel.text = timerString(time: waterTime)
@@ -89,10 +101,17 @@ class HowToCookRiceViewController: UIViewController {
         }
     }
     
+    func addTimerUpdate() {
+        // addTimer action
+    }
+    
+    func highHeatTimerUpdate() {
+        // highHeatTimer action
+    }
+    
     func timerString(time: Int) -> String {
         return "\(String(format: "%02d", Int(floor(Double(time/60))))):\(String(format: "%02d", time%60))"
     }
-    
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)

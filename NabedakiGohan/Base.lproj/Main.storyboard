@@ -187,9 +187,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2d-g4-keU">
                                 <state key="normal" title="終了"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOw-nd-1Ah">
-                                <state key="normal" title="ない!"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DY2-Kk-i9z">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="J4X-ur-aDs"/>
@@ -199,17 +196,34 @@
                                     <segue destination="qMg-tn-CbC" kind="unwind" unwindAction="unwindToTopWithSegue:" id="uXb-RZ-DMO"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hkc-Zr-NL5">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="21" id="sCc-F9-ClF"/>
+                                </constraints>
+                                <state key="normal" title="有"/>
+                                <connections>
+                                    <action selector="withWaterButtonClicked" destination="5Lp-qg-IIW" eventType="touchUpInside" id="jdw-4W-0Nl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOw-nd-1Ah">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="5qu-Pn-32g"/>
+                                </constraints>
+                                <state key="normal" title="無"/>
+                                <connections>
+                                    <action selector="withoutWaterButtonClicked" destination="5Lp-qg-IIW" eventType="touchUpInside" id="RLy-fD-Gye"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="sNl-c4-AOK" firstAttribute="top" secondItem="gR0-98-yJ2" secondAttribute="bottom" constant="60" id="1wH-h9-KWB"/>
                             <constraint firstItem="fmG-iU-oIH" firstAttribute="leading" secondItem="GNe-Sp-4Y0" secondAttribute="leading" id="3J3-4M-23i"/>
-                            <constraint firstItem="MOw-nd-1Ah" firstAttribute="baseline" secondItem="H8g-8b-Uj4" secondAttribute="baseline" constant="-1" id="3ZD-4b-ADu"/>
+                            <constraint firstItem="MOw-nd-1Ah" firstAttribute="baseline" secondItem="Hkc-Zr-NL5" secondAttribute="baseline" id="4Jg-oJ-gzp"/>
                             <constraint firstItem="kud-yW-qgd" firstAttribute="leading" secondItem="z40-Pb-jgh" secondAttribute="leading" id="4eO-O1-slh"/>
                             <constraint firstItem="Uwa-8d-rjS" firstAttribute="top" secondItem="H8g-8b-Uj4" secondAttribute="bottom" constant="17.5" id="705-ee-Llv"/>
                             <constraint firstItem="PlN-x2-t0h" firstAttribute="leading" secondItem="X0x-cA-8uO" secondAttribute="leading" id="7lL-lo-M9B"/>
                             <constraint firstItem="OAh-JI-e05" firstAttribute="leading" secondItem="yMS-A3-Ijc" secondAttribute="leading" constant="-4" id="AlP-0J-FnO"/>
-                            <constraint firstItem="MOw-nd-1Ah" firstAttribute="trailing" secondItem="OAh-JI-e05" secondAttribute="trailing" id="Aw6-lx-5h0"/>
                             <constraint firstItem="z40-Pb-jgh" firstAttribute="trailing" secondItem="Cwj-Wq-Cub" secondAttribute="trailing" id="BBh-3Y-hoF"/>
                             <constraint firstItem="z40-Pb-jgh" firstAttribute="leading" secondItem="Cwj-Wq-Cub" secondAttribute="leading" id="Bbm-uh-aco"/>
                             <constraint firstItem="DY2-Kk-i9z" firstAttribute="leading" secondItem="DJa-fo-H5f" secondAttribute="leading" id="DEc-Nd-vDJ"/>
@@ -232,7 +246,6 @@
                             <constraint firstItem="Cwj-Wq-Cub" firstAttribute="baseline" secondItem="Uwa-8d-rjS" secondAttribute="baseline" id="TDD-Ox-egl"/>
                             <constraint firstItem="jZz-Hi-Ej4" firstAttribute="top" secondItem="Uwa-8d-rjS" secondAttribute="bottom" constant="17.5" id="WHK-Jn-iee"/>
                             <constraint firstItem="OAh-JI-e05" firstAttribute="baseline" secondItem="fmG-iU-oIH" secondAttribute="baseline" id="YBn-i5-t3F"/>
-                            <constraint firstItem="Cwj-Wq-Cub" firstAttribute="trailing" secondItem="MOw-nd-1Ah" secondAttribute="trailing" id="YOE-eI-Fpr"/>
                             <constraint firstItem="8bl-9B-Ub6" firstAttribute="centerY" secondItem="GNe-Sp-4Y0" secondAttribute="centerY" id="aD4-Yy-aiQ"/>
                             <constraint firstItem="X0x-cA-8uO" firstAttribute="top" secondItem="jZz-Hi-Ej4" secondAttribute="bottom" constant="17.5" id="aJr-mU-NMe"/>
                             <constraint firstItem="z40-Pb-jgh" firstAttribute="baseline" secondItem="jZz-Hi-Ej4" secondAttribute="baseline" id="bEt-Ch-07Y"/>
@@ -244,11 +257,12 @@
                             <constraint firstItem="PlN-x2-t0h" firstAttribute="top" secondItem="X0x-cA-8uO" secondAttribute="bottom" constant="17.5" id="esw-DL-84t"/>
                             <constraint firstItem="6HG-tZ-PaF" firstAttribute="top" secondItem="OLo-Kp-eU9" secondAttribute="bottom" constant="17.5" id="gyr-66-swz"/>
                             <constraint firstItem="GNe-Sp-4Y0" firstAttribute="leading" secondItem="6HG-tZ-PaF" secondAttribute="leading" id="hog-nS-YCV"/>
+                            <constraint firstItem="MOw-nd-1Ah" firstAttribute="leading" secondItem="Hkc-Zr-NL5" secondAttribute="trailing" constant="7" id="isX-il-0HY"/>
+                            <constraint firstItem="MOw-nd-1Ah" firstAttribute="trailing" secondItem="OAh-JI-e05" secondAttribute="trailing" id="jEt-ad-Hjz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yMS-A3-Ijc" secondAttribute="trailing" constant="18" id="lcH-Yh-sin"/>
+                            <constraint firstItem="MOw-nd-1Ah" firstAttribute="centerY" secondItem="H8g-8b-Uj4" secondAttribute="centerY" id="pP5-a2-joz"/>
                             <constraint firstItem="6HG-tZ-PaF" firstAttribute="leading" secondItem="OLo-Kp-eU9" secondAttribute="leading" id="ukU-fe-NLv"/>
-                            <constraint firstItem="s2d-g4-keU" firstAttribute="leading" secondItem="MOw-nd-1Ah" secondAttribute="leading" id="vdz-se-G1r"/>
                             <constraint firstItem="kud-yW-qgd" firstAttribute="baseline" secondItem="X0x-cA-8uO" secondAttribute="baseline" id="wzE-8d-Wc0"/>
-                            <constraint firstItem="MOw-nd-1Ah" firstAttribute="leading" secondItem="OAh-JI-e05" secondAttribute="leading" constant="4" id="zFh-Xc-1SF"/>
                         </constraints>
                     </view>
                     <connections>
