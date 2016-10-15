@@ -27,11 +27,10 @@ class HowToCookRiceViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        initUserDefaults()
+        setRiceTimeUserDefaults()
     }
     
-    func initUserDefaults() {
+    func setRiceTimeUserDefaults() {
         waterTime = riceTimeUserDefaults.integer(forKey: "waterTime")
         lowHeatTime = riceTimeUserDefaults.integer(forKey: "lowHeatTime")
         highHeatTime = riceTimeUserDefaults.integer(forKey: "highHeatTime")
