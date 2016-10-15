@@ -15,7 +15,7 @@ class HowToCookRiceViewController: UIViewController {
     
     var waterTime = 0
     var lowHeatTime = 0
-    var addTime = 5 // 60
+    var addTime = 60
     var highHeatTime = 0
     var steamTime = 0
     
@@ -44,12 +44,6 @@ class HowToCookRiceViewController: UIViewController {
         lowHeatTime = riceTimeUserDefaults.integer(forKey: "lowHeatTime")
         highHeatTime = riceTimeUserDefaults.integer(forKey: "highHeatTime")
         steamTime = riceTimeUserDefaults.integer(forKey: "steamTime")
-
-        // test
-        waterTime = 5
-        lowHeatTime = 5
-        highHeatTime = 5
-        steamTime = 5
         
         waterTimeLabel.text = timerString(time: waterTime)
         lowHeatTimeLabel.text = timerString(time: lowHeatTime)
