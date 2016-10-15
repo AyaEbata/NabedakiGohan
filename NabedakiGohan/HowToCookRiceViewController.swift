@@ -25,8 +25,18 @@ class HowToCookRiceViewController: UIViewController {
     @IBOutlet weak var highHeatTimeLabel: UILabel!
     @IBOutlet weak var steamTimeLabel: UILabel!
     
+    @IBOutlet weak var washLabel: UILabel!
+    @IBOutlet weak var waterLabel: UILabel!
+    @IBOutlet weak var  boilLabel: UILabel!
+    @IBOutlet weak var lowHeatLabel: UILabel!
+    @IBOutlet weak var waterConfirmationLabel: UILabel!
+    @IBOutlet weak var addLabel: UILabel!
+    @IBOutlet weak var highHeatLabel: UILabel!
+    @IBOutlet weak var steamLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setRiceTimeUserDefaults()
     }
     

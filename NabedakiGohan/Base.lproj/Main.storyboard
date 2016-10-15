@@ -259,10 +259,18 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addLabel" destination="Uwa-8d-rjS" id="MTR-px-4JH"/>
                         <outlet property="addTimeLabel" destination="Cwj-Wq-Cub" id="Vw4-hr-Bzi"/>
+                        <outlet property="boilLabel" destination="GNe-Sp-4Y0" id="1Ah-Up-teC"/>
+                        <outlet property="highHeatLabel" destination="jZz-Hi-Ej4" id="keN-ld-c2G"/>
                         <outlet property="highHeatTimeLabel" destination="z40-Pb-jgh" id="ldX-gb-hnc"/>
+                        <outlet property="lowHeatLabel" destination="H8g-8b-Uj4" id="Rz6-bT-KlP"/>
                         <outlet property="lowHeatTimeLabel" destination="OAh-JI-e05" id="n28-BY-8Pa"/>
+                        <outlet property="steamLabel" destination="X0x-cA-8uO" id="arD-np-cN1"/>
                         <outlet property="steamTimeLabel" destination="kud-yW-qgd" id="o4T-hN-NZo"/>
+                        <outlet property="washLabel" destination="OLo-Kp-eU9" id="RCY-Y1-IRm"/>
+                        <outlet property="waterConfirmationLabel" destination="H8g-8b-Uj4" id="oCe-wW-jXO"/>
+                        <outlet property="waterLabel" destination="6HG-tZ-PaF" id="cnX-o5-s6A"/>
                         <outlet property="waterTimeLabel" destination="o8f-eT-5UR" id="KkD-vr-Ec2"/>
                     </connections>
                 </viewController>
