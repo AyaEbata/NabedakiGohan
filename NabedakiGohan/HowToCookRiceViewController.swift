@@ -34,7 +34,7 @@ class HowToCookRiceViewController: UIViewController {
     func initUserDefaults() {
         waterTime = riceTimeUserDefaults.integer(forKey: "waterTime")
         lowHeatTime = riceTimeUserDefaults.integer(forKey: "lowHeatTime")
-        highHeatTime = riceTimeUserDefaults.integer(forKey: "hightHeatTime")
+        highHeatTime = riceTimeUserDefaults.integer(forKey: "highHeatTime")
         steamTime = riceTimeUserDefaults.integer(forKey: "steamTime")
 
         waterTimeLabel.text = timerString(time: waterTime)
