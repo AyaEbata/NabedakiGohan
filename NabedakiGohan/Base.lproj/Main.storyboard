@@ -18,7 +18,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21B-Mj-MX9">
@@ -66,7 +66,7 @@
                         <viewControllerLayoutGuide type="bottom" id="fAT-wM-vyU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="DJa-fo-H5f">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ごはんのたきかた" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNl-c4-AOK">
@@ -180,14 +180,6 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z40-Pb-jgh">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="47" id="vhc-6a-XOZ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kud-yW-qgd">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="47" id="3wH-d7-5je"/>
@@ -226,6 +218,14 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2d-g4-keU">
                                 <state key="normal" title="終了"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z40-Pb-jgh">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="47" id="vhc-6a-XOZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -252,14 +252,14 @@
                             <constraint firstItem="jZz-Hi-Ej4" firstAttribute="leading" secondItem="Uwa-8d-rjS" secondAttribute="leading" id="S7P-0c-IMb"/>
                             <constraint firstItem="jZz-Hi-Ej4" firstAttribute="top" secondItem="Uwa-8d-rjS" secondAttribute="bottom" constant="17.5" id="WHK-Jn-iee"/>
                             <constraint firstItem="OAh-JI-e05" firstAttribute="centerY" secondItem="fmG-iU-oIH" secondAttribute="centerY" id="X6A-eU-X9f"/>
-                            <constraint firstItem="z40-Pb-jgh" firstAttribute="centerY" secondItem="jZz-Hi-Ej4" secondAttribute="centerY" id="YM3-th-bMe"/>
+                            <constraint firstItem="z40-Pb-jgh" firstAttribute="centerY" secondItem="jZz-Hi-Ej4" secondAttribute="centerY" constant="-1" id="YM3-th-bMe"/>
                             <constraint firstItem="8bl-9B-Ub6" firstAttribute="centerY" secondItem="GNe-Sp-4Y0" secondAttribute="centerY" id="aD4-Yy-aiQ"/>
                             <constraint firstItem="X0x-cA-8uO" firstAttribute="top" secondItem="jZz-Hi-Ej4" secondAttribute="bottom" constant="17.5" id="aJr-mU-NMe"/>
-                            <constraint firstItem="z40-Pb-jgh" firstAttribute="trailing" secondItem="Cwj-Wq-Cub" secondAttribute="trailing" constant="3" id="aOM-da-9F3"/>
+                            <constraint firstItem="z40-Pb-jgh" firstAttribute="trailing" secondItem="Cwj-Wq-Cub" secondAttribute="trailing" id="aOM-da-9F3"/>
                             <constraint firstItem="GNe-Sp-4Y0" firstAttribute="top" secondItem="6HG-tZ-PaF" secondAttribute="bottom" constant="17.5" id="c50-gX-zNs"/>
                             <constraint firstItem="MOw-nd-1Ah" firstAttribute="trailing" secondItem="OAh-JI-e05" secondAttribute="trailing" id="cNZ-W4-Kzm"/>
                             <constraint firstItem="X0x-cA-8uO" firstAttribute="leading" secondItem="jZz-Hi-Ej4" secondAttribute="leading" id="cqw-cV-5Qz"/>
-                            <constraint firstItem="kud-yW-qgd" firstAttribute="trailing" secondItem="z40-Pb-jgh" secondAttribute="trailing" id="dDT-Bg-Fod"/>
+                            <constraint firstItem="kud-yW-qgd" firstAttribute="trailing" secondItem="z40-Pb-jgh" secondAttribute="trailing" constant="3" id="dDT-Bg-Fod"/>
                             <constraint firstItem="fmG-iU-oIH" firstAttribute="top" secondItem="GNe-Sp-4Y0" secondAttribute="bottom" constant="17.5" id="eOo-S1-Nnk"/>
                             <constraint firstItem="PlN-x2-t0h" firstAttribute="top" secondItem="X0x-cA-8uO" secondAttribute="bottom" constant="17.5" id="esw-DL-84t"/>
                             <constraint firstItem="6HG-tZ-PaF" firstAttribute="top" secondItem="OLo-Kp-eU9" secondAttribute="bottom" constant="17.5" id="gyr-66-swz"/>
@@ -275,6 +275,7 @@
                     </view>
                     <connections>
                         <outlet property="addTimeLabel" destination="Cwj-Wq-Cub" id="Vw4-hr-Bzi"/>
+                        <outlet property="highHeatTimeLabel" destination="z40-Pb-jgh" id="mCN-dn-TwH"/>
                         <outlet property="lowHeatTimeLabel" destination="OAh-JI-e05" id="n28-BY-8Pa"/>
                         <outlet property="waterTimeLabel" destination="o8f-eT-5UR" id="KkD-vr-Ec2"/>
                     </connections>
@@ -293,7 +294,7 @@
                         <viewControllerLayoutGuide type="bottom" id="h1d-c6-laK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TLx-Gc-oxw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="かんそう" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4W-de-ETe">

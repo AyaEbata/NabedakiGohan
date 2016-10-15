@@ -16,10 +16,12 @@ class HowToCookRiceViewController: UIViewController {
     var waterTime: Int = 0
     var lowHeatTime: Int = 0
     var addTime: Int = 5  // テスト用 60
+    var highHeatTime: Int = 0
     
     @IBOutlet weak var waterTimeLabel: UILabel!
     @IBOutlet weak var lowHeatTimeLabel: UILabel!
     @IBOutlet weak var addTimeLabel: UILabel!
+    @IBOutlet weak var highHeatTimeLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,13 +32,16 @@ class HowToCookRiceViewController: UIViewController {
     func initUserDefaults() {
         waterTime = riceTimeUserDefaults.integer(forKey: "waterTime")
         lowHeatTime = riceTimeUserDefaults.integer(forKey: "lowHeatTime")
+        highHeatTime = riceTimeUserDefaults.integer(forKey: "hightHeatTime")
 
         // テスト用
         waterTime = 5
         lowHeatTime = 5
+        highHeatTime = 5
 
         waterTimeLabel.text = timerString(time: waterTime)
         lowHeatTimeLabel.text = timerString(time: lowHeatTime)
+        highHeatTimeLabel.text = timerString(time: highHeatTime)
     }
     
     @IBAction func washButtonClicked() {
@@ -74,6 +79,8 @@ class HowToCookRiceViewController: UIViewController {
             setRiceTimer(selector: #selector(addTimerUpdate))
         case "withoutWater":
             setRiceTimer(selector: #selector(highHeatTimerUpdate))
+        case "highHeat":
+            setRiceTimer(selector: #selector(steamTimerUpdate))
         default:
             break
         }
@@ -83,7 +90,7 @@ class HowToCookRiceViewController: UIViewController {
         riceTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: selector, userInfo: nil, repeats: true)
     }
 
-    func waterTimerUpdate(timer: Timer) {
+    func waterTimerUpdate() {
         waterTime -= 1
         waterTimeLabel.text = timerString(time: waterTime)
         
@@ -93,7 +100,7 @@ class HowToCookRiceViewController: UIViewController {
         }
     }
     
-    func lowHeatTimerUpdate(timer: Timer) {
+    func lowHeatTimerUpdate() {
         lowHeatTime -= 1
         lowHeatTimeLabel.text = timerString(time: lowHeatTime)
         
@@ -114,7 +121,17 @@ class HowToCookRiceViewController: UIViewController {
     }
     
     func highHeatTimerUpdate() {
-        // highHeatTimer action
+        highHeatTime -= 1
+        highHeatTimeLabel.text = timerString(time: highHeatTime)
+        
+        if highHeatTime == 0 {
+            riceTimer.invalidate()
+            alert(type: "highHeat", message: "最後に、火を止めて蒸らしてね！")
+        }
+    }
+    
+    func steamTimerUpdate() {
+        // steam timer action
     }
     
     func timerString(time: Int) -> String {
