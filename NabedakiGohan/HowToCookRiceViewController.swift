@@ -15,7 +15,7 @@ class HowToCookRiceViewController: UIViewController {
     
     var waterTime = 0
     var lowHeatTime = 0
-    var addTime = 60
+    var addTime = 5 // 60
     var highHeatTime = 0
     var steamTime = 0
     
@@ -36,7 +36,6 @@ class HowToCookRiceViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setRiceTimeUserDefaults()
     }
     
@@ -46,6 +45,12 @@ class HowToCookRiceViewController: UIViewController {
         highHeatTime = riceTimeUserDefaults.integer(forKey: "highHeatTime")
         steamTime = riceTimeUserDefaults.integer(forKey: "steamTime")
 
+        // test
+        waterTime = 5
+        lowHeatTime = 5
+        highHeatTime = 5
+        steamTime = 5
+        
         waterTimeLabel.text = timerString(time: waterTime)
         lowHeatTimeLabel.text = timerString(time: lowHeatTime)
         highHeatTimeLabel.text = timerString(time: highHeatTime)
@@ -74,7 +79,7 @@ class HowToCookRiceViewController: UIViewController {
     func firstAlert() {
         let alert = UIAlertController(title: "さいしょのこうてい", message: "米を研いでね！", preferredStyle: .alert)
         let nextAction = UIAlertAction(title: "次へ", style: .default, handler: {(action:UIAlertAction!) -> Void in
-            // action
+            self.changeColor(label: self.washLabel)
         })
         alert.addAction(nextAction)
         self.present(alert, animated: true, completion: nil)
@@ -92,20 +97,52 @@ class HowToCookRiceViewController: UIViewController {
     func alertAction(type: String) {
         switch type {
         case "wash":
+            changeColor(label: waterLabel)
             setRiceTimer(selector: #selector(waterTimerUpdate))
+            
+        case "water":
+            changeColor(label: boilLabel)
+            
         case "boil":
+            changeColor(label: lowHeatLabel)
             setRiceTimer(selector: #selector(lowHeatTimerUpdate))
+            
+        case "lowHeat":
+            changeColor(label: waterConfirmationLabel)
+            
+        case "add":
+            changeColor(label: waterConfirmationLabel)
+            
         case "withWater":
+            changeColor(label: addLabel)
             setRiceTimer(selector: #selector(addTimerUpdate))
+            
         case "withoutWater":
+            changeColor(label: highHeatLabel)
             setRiceTimer(selector: #selector(highHeatTimerUpdate))
+            
         case "highHeat":
+            changeColor(label: steamLabel)
             setRiceTimer(selector: #selector(steamTimerUpdate))
+            
         default:
             break
         }
     }
 
+    func changeColor(label: UILabel) {
+        washLabel.textColor = UIColor.init(red: 0.3333, green: 0.3333, blue: 0.3333, alpha: 1.0)
+        waterLabel.textColor = UIColor.init(red: 0.3333, green: 0.3333, blue: 0.3333, alpha: 1.0)
+        boilLabel.textColor = UIColor.init(red: 0.3333, green: 0.3333, blue: 0.3333, alpha: 1.0)
+        lowHeatLabel.textColor = UIColor.init(red: 0.3333, green: 0.3333, blue: 0.3333, alpha: 1.0)
+        waterConfirmationLabel.textColor = UIColor.init(red: 0.3333, green: 0.3333, blue: 0.3333, alpha: 1.0)
+        addLabel.textColor = UIColor.init(red: 0.3333, green: 0.3333, blue: 0.3333, alpha: 1.0)
+        highHeatLabel.textColor = UIColor.init(red: 0.3333, green: 0.3333, blue: 0.3333, alpha: 1.0)
+        steamLabel.textColor = UIColor.init(red: 0.3333, green: 0.3333, blue: 0.3333, alpha: 1.0)
+
+        label.textColor = UIColor.init(red: 1.0, green: 0.4, blue: 0.8, alpha: 1.0)
+    }
+    
     func setRiceTimer(selector: Selector) {
         riceTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: selector, userInfo: nil, repeats: true)
     }

@@ -18,7 +18,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21B-Mj-MX9">
@@ -66,7 +66,7 @@
                         <viewControllerLayoutGuide type="bottom" id="fAT-wM-vyU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="DJa-fo-H5f">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ごはんをたく" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNl-c4-AOK">
@@ -219,7 +219,7 @@
                                 <color key="backgroundColor" red="0.99159079790000004" green="0.8893681765" blue="0.96290534729999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                 <state key="normal" title="すたーと">
-                                    <color key="titleColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="0.40000000000000002" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -284,7 +284,7 @@
                         <outlet property="boilLabel" destination="GNe-Sp-4Y0" id="1Ah-Up-teC"/>
                         <outlet property="highHeatLabel" destination="jZz-Hi-Ej4" id="keN-ld-c2G"/>
                         <outlet property="highHeatTimeLabel" destination="z40-Pb-jgh" id="ldX-gb-hnc"/>
-                        <outlet property="lowHeatLabel" destination="H8g-8b-Uj4" id="Rz6-bT-KlP"/>
+                        <outlet property="lowHeatLabel" destination="fmG-iU-oIH" id="zbP-on-1Gl"/>
                         <outlet property="lowHeatTimeLabel" destination="OAh-JI-e05" id="n28-BY-8Pa"/>
                         <outlet property="steamLabel" destination="X0x-cA-8uO" id="arD-np-cN1"/>
                         <outlet property="steamTimeLabel" destination="kud-yW-qgd" id="o4T-hN-NZo"/>
@@ -308,7 +308,7 @@
                         <viewControllerLayoutGuide type="bottom" id="h1d-c6-laK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TLx-Gc-oxw">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="きょうのかんそう" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4W-de-ETe">
