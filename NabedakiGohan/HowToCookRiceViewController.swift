@@ -109,6 +109,10 @@ class HowToCookRiceViewController: UIViewController {
             
         case "withWater":
             changeColor(label: addLabel)
+            
+            let ud = UserDefaults.standard
+            ud.set(ud.integer(forKey: "lowHeatTime") + 60, forKey: "lowHeatTime")
+            
             setRiceTimer(selector: #selector(addTimerUpdate))
             
         case "withoutWater":
