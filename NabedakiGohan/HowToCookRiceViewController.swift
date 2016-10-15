@@ -13,15 +13,17 @@ class HowToCookRiceViewController: UIViewController {
     var riceTimer = Timer()
     let riceTimeUserDefaults = UserDefaults.standard
     
-    var waterTime: Int = 0
-    var lowHeatTime: Int = 0
-    var addTime: Int = 5  // テスト用 60
-    var highHeatTime: Int = 0
+    var waterTime = 0
+    var lowHeatTime = 0
+    var addTime = 60
+    var highHeatTime = 0
+    var steamTime = 0
     
     @IBOutlet weak var waterTimeLabel: UILabel!
     @IBOutlet weak var lowHeatTimeLabel: UILabel!
     @IBOutlet weak var addTimeLabel: UILabel!
     @IBOutlet weak var highHeatTimeLabel: UILabel!
+    @IBOutlet weak var steamTimeLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,15 +35,12 @@ class HowToCookRiceViewController: UIViewController {
         waterTime = riceTimeUserDefaults.integer(forKey: "waterTime")
         lowHeatTime = riceTimeUserDefaults.integer(forKey: "lowHeatTime")
         highHeatTime = riceTimeUserDefaults.integer(forKey: "hightHeatTime")
-
-        // テスト用
-        waterTime = 5
-        lowHeatTime = 5
-        highHeatTime = 5
+        steamTime = riceTimeUserDefaults.integer(forKey: "steamTime")
 
         waterTimeLabel.text = timerString(time: waterTime)
         lowHeatTimeLabel.text = timerString(time: lowHeatTime)
         highHeatTimeLabel.text = timerString(time: highHeatTime)
+        steamTimeLabel.text = timerString(time: steamTime)
     }
     
     @IBAction func washButtonClicked() {
@@ -131,7 +130,26 @@ class HowToCookRiceViewController: UIViewController {
     }
     
     func steamTimerUpdate() {
-        // steam timer action
+        steamTime -= 1
+        steamTimeLabel.text = timerString(time: steamTime)
+        
+        if steamTime == 0 {
+            riceTimer.invalidate()
+            finishAlert()
+        }
+    }
+    
+    func finishAlert() {
+        let alert = UIAlertController(title: "完成！！！！！！", message: "", preferredStyle: .alert)
+        let nextAction = UIAlertAction(title: "TOPへもどる", style: .default, handler: {(action:UIAlertAction!) -> Void in
+            self.goToTopPage()
+        })
+        alert.addAction(nextAction)
+        self.present(alert, animated: true, completion: nil)
+    }
+
+    func goToTopPage() {
+        self.dismiss(animated: true, completion: nil)
     }
     
     func timerString(time: Int) -> String {
