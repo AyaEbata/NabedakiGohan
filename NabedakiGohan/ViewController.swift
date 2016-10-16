@@ -27,6 +27,7 @@ class ViewController: UIViewController {
         
         userDefaults.set(1800, forKey: "waterTime")
         userDefaults.set(600, forKey: "lowHeatTime")
+        userDefaults.set(60, forKey: "addTime")
         userDefaults.set(10, forKey: "highHeatTime")
         userDefaults.set(600, forKey: "steamTime")
         
