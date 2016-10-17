@@ -16,7 +16,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        initUserDefaults()
         return true
+    }
+
+    func initUserDefaults() {
+        let riceTimeUserDefaults = UserDefaults.standard
+        riceTimeUserDefaults.register(defaults: initValueArray())
+    }
+    
+    func initValueArray() -> Dictionary<String, Int> {
+        return ["waterTime": 1800, "lowHeatTime": 600, "addTime": 60, "highHeatTime": 10, "steamTime": 600]
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
